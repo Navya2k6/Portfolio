@@ -1,0 +1,104 @@
+#extra {
+  padding: 3rem 1rem;
+}
+
+.title-extra {
+  position: relative;
+  text-align: center;
+}
+
+.title-extra h1 {
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-size: clamp(3.4rem, 5vw, 6rem);
+  margin-top: 10vh;
+  font-weight: 600;
+  color: rgb(207, 69, 149);
+  animation: spacingEffect 1.2s ease-in-out 1;
+}
+
+@keyframes spacingEffect {
+  0% {
+    letter-spacing: 0.7em;
+    opacity: 0;
+    transform: scale(1.1);
+  }
+  50% {
+    letter-spacing: -0.3em;
+    opacity: 1;
+    transform: scale(0.95);
+  }
+  100% {
+    letter-spacing: 0em;
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.extra-box-container {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.extra-box {
+  width: 90%;
+  max-width: 700px;
+  padding: 1.5rem 2rem;
+  border-radius: 15px;
+  color: #fff;
+  text-align: center;
+  background: linear-gradient(135deg, #de82cd, #a777e3);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease-out;
+}
+
+.extra-box h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.extra-box p {
+  font-size: 1rem;
+  color: #f5f5f5;
+}
+
+/* Animation trigger */
+.fade-in {
+  animation: fadeInUp 1s ease forwards;
+}
+.fade-in.delay {
+  animation-delay: 0.3s;
+}
+.fade-in.delay-more {
+  animation-delay: 0.6s;
+}
+.fade-in.delay-long {
+  animation-delay: 0.9s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .extra-box {
+    padding: 1.2rem;
+  }
+
+  .extra-box h2 {
+    font-size: 1.3rem;
+  }
+
+  .extra-box p {
+    font-size: 0.95rem;
+  }
+}
