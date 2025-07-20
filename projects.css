@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#projects {
+  padding: 3rem 1rem;
+}
+
+.title-projects {
+  text-align: center;
+  position: relative;
+}
+
+.title-projects h1 {
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-size: clamp(3.4rem, 5vw, 6rem);
+  margin-top: 10vh;
+  font-weight: 600;
+  color: rgb(207, 69, 149);
+  animation: spacingEffect 1.2s ease-in-out 1;
+}
+
+@keyframes spacingEffect {
+  0% {
+    letter-spacing: 0.7em;
+    opacity: 0;
+    transform: scale(1.1);
+  }
+  50% {
+    letter-spacing: -0.3em;
+    opacity: 1;
+    transform: scale(0.95);
+  }
+  100% {
+    letter-spacing: 0em;
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.img-txt-wraper {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.img-and-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 900px;
+  background: #fff;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  border-radius: 12px;
+  transform: translateY(60px);
+  opacity: 0;
+  transition: 0.8s ease-in-out;
+}
+
+.img-and-text.visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.proj-image {
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  transition: transform 0.5s;
+}
+
+.proj-image:hover {
+  transform: scale(1.05) rotate(-1deg);
+}
+
+.proj-info {
+  max-width: 400px;
+}
+
+.proj-info h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.proj-info p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.duration {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #999;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .img-and-text {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .proj-image {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .proj-image {
+    width: 30%;
+  }
+
+  .title-projects h1 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .title-projects h1 {
+    font-size: 2.4rem;
+  }
+}

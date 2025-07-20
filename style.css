@@ -111,30 +111,6 @@ body{
 }
 
 
-.coverpage-footer {
-    position: absolute;
-    bottom: 0;
-    width: 13vw;
-    z-index: 10;
-    background-color: transparent;
-    padding-bottom: 0.2em;
-    padding-left: 15em;
-    text-align: center;
-    font-size: 4rem;
-    color: #ccc;
-}
-.coverpage-footer footer{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    color: #6B7280;
-}
-.coverpage-footer footer p{
-    max-width: 20rem; 
-    font-size: 0.75rem; 
-    margin: 0;     
-}
-
 
 /* responsive */
 @media screen and (max-width: 2000px) 
