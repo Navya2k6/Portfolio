@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="personal.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=My+Soul&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+</head>
+<body>
+     <header class="navigation-bar">
+        <div class="nav-container">
+            <div class="logo">Navya Priyadarshini</div>
+
+                <!-- Hamburger Icon -->
+                <button class="menu-toggle" id="menuToggle">&#9776;</button>
+        <nav id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="personal.html">Personal</a>
+            <a href="education.html">Education</a>
+            <a href="projects.html">Projects</a>
+            <a href="extra.html">Extra-Curriculars</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        </div>
+    </header>
+
+    <section id="personal">
+     <div class="title-personal" id="personal-title">
+            <h1>Personal <br> details</h1>
+            <div class="img-txt-wraper-personal">
+                <img src="bgnnav.png" alt="Lioness" class="personal-nav" id="personalImage">
+            </div>
+      </div> 
+    </section>
+            <div class="name-personal-hidden hidden" id="nameReveal">
+                    <h2 style="  color: #c94c98;">Hey! I'm Navya Priyadarshini 👋</h2>
+                    <p>
+                        I'm currently pursuing my 3rd year in Computer Science and Engineering at SRKR Engineering College Bhimavaram.
+                    </p>
+                    </div>
+
+
+                    <div class="resume-section hidden" id="resumeSection">
+                    <a href="Navya resume 2025.pdf" target="_blank" class="resume-link">📄 Here is My Resume</a>
+                    </div>
+            
+
+            <div class="skills-section hidden" id="skillsSection">
+                <h2 class="skills-heading">💡 My Skills</h2>
+                <div class="skills-list">
+                    <span>🌐 HTML5, CSS3, JavaScript</span>
+                    <span>⚛️ React, Node.js, Express.js</span>
+                    <span>🧠 DSA in Java</span>
+                    <span>🛠️ Git, GitHub, VS Code</span>
+                    <span>📦 MongoDB, MySQL</span>
+                    <span>🎨 UI/UX Basics</span>
+                </div>
+                </div>
+
+
+            <section class="personal-highlights">
+                <div class="highlight-box">
+                    <h2>🌐 Languages Known</h2>
+                    <ul>
+                    <li><span>English</span></li>
+                    <li><span>Telugu</span></li>
+                    </ul>
+                </div>
+
+                <div class="highlight-box">
+                    <h2>🎯 Strengths</h2>
+                    <ul>
+                    <li><span>Quick Learner</span></li>
+                    <li><span>Creative Thinker</span></li>
+                    <li><span>Problem Solver</span></li>
+                    </ul>
+                </div>
+
+                <div class="highlight-box">
+                    <h2>🧩 Hobbies & Interests</h2>
+                    <ul>
+                    <li><span>Web Development</span></li>
+                    <li><span>Participating in Hackathons</span></li>
+                    <li><span>Sketching</span></li>
+                    </ul>
+                </div>
+                </section>
+
+
+    
+    
+
+
+
+        
+<script> window.onload = () => {
+    const image = document.getElementById("personalImage");
+    const name = document.getElementById("nameReveal");
+
+    // Wait for image to load and animate
+    setTimeout(() => {
+      name.classList.remove("hidden");
+      name.classList.add("visible");
+    }, 2000); 
+  };</script>
+    <script src="nav.js"></script>
+    
+</body>
+</html>
