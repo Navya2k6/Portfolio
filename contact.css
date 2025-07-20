@@ -114,6 +114,7 @@ html {
   border-radius: 8px;
   font-size: 1rem;
   font-family: inherit;
+  animation: none;
 }
 
 .contact-form button {
@@ -134,7 +135,7 @@ html {
 /* Icons */
 .contact-icons {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   gap: 0.7rem;
   margin-top: 3rem;
