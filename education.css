@@ -63,7 +63,7 @@ body{
     position: absolute;
     width: clamp(250px, 22vw, 250px);
     bottom: 0px;
-    left: 0rem;
+    left: 11rem;
     margin-top: 8rem;
     transform: translateX(-50%);
     opacity: 0;
