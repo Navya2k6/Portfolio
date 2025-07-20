@@ -128,27 +128,50 @@ body{
 
 }
 
-
-/* @media screen and (max-width: 480px) {
+/* @media screen and (max-width: 450px) {
     .education-nav {
-        bottom:3em;
-        transform: none;          
-        width: 20vw;
-        text-align: left; 
-        z-index: 1;  
+        right: -35%;  
+        left: 95%;            
+        bottom:0px;
+        transform: none; 
+        z-index: 1;         
+        width: clamp(200px, 2vw, 200px);
     }
-    .title-education h1 {
-    font-size: 2.5rem;
+    
+
+  .title-education h1 {
+    top: 20%;
+    text-align: center;
+    font-size: 3em;
     position: relative;
      z-index: 0;
-     margin-left: 0rem;
-
   }
     .title-education {
     position: relative;
   }
-  
+
+
 } */
+
+
+@media screen and (max-width: 480px) {
+  .education-nav {
+    display: none;
+  }
+
+  .title-education {
+    position: relative;
+    padding: 0 1rem;
+    text-align: center;
+  }
+
+  .title-education h1 {
+    font-size: 3rem; 
+    margin-left: 0;
+    z-index: 0;
+  }
+}
+
 
 /*navya-image animation*/
 @keyframes navyaSlideUp {
