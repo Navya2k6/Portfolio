@@ -4,23 +4,31 @@
   top: 0;
   left: 0;
   z-index: 1000;
-
   width: 100%;
   padding: 0.5rem 1rem;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
   background-color: #fff;
 }
+
 .nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-   padding: 0 20px;
+  padding: 0 20px;
 }
+
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
   color: #1f2937;
+}
+
+/* Links inside nav */
+nav {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
 }
 
 nav a {
@@ -38,9 +46,12 @@ nav a:hover {
   text-decoration: underline;
   text-decoration-color: pink;
 }
-nav a:last-child{
+
+nav a:last-child {
   padding-right: 1.5rem;
 }
+
+/* Hamburger icon */
 .menu-toggle {
   display: none;
   background: none;
@@ -48,16 +59,25 @@ nav a:last-child{
   font-size: 1.5rem;
   cursor: pointer;
   padding-right: 2rem;
+  color: #333;
 }
 
-/* Responsive styles */
+/* Toggle active class */
+#navLinks.active {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Medium screens */
 @media (max-width: 768px) {
   nav {
+    display: none;
     flex-direction: column;
     width: 100%;
-    display: none;
+    background-color: #fff;
   }
- nav a {
+
+  nav a {
     padding: 1rem;
     text-align: center;
     width: 100%;
@@ -72,28 +92,24 @@ nav a:last-child{
     display: flex;
   }
 }
+
+/* Smallest screens */
 @media (max-width: 400px) {
   nav {
-    flex-direction: column;
-    width: 70%;
-    display: none;
+    width: 100%;
   }
-  .menu-toggle{
-    /* display: none; */
-  background: none;
-  border: none;
-  font-size: 1.2rem;
-  cursor: pointer;
-  padding-right: 1rem;
-  }
-  .logo{
-  font-size: 1rem;
-  font-weight: bold;
-  color: #1f2937;
-}
-}
- 
 
-#navLinks.active {
-  display: flex;
+  .menu-toggle {
+    font-size: 1.2rem;
+    padding-right: 1rem;
+  }
+
+  .logo {
+    font-size: 1rem;
+  }
+
+  nav a {
+    font-size: 0.85rem;
+    padding: 0.8rem;
+  }
 }
