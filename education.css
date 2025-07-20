@@ -128,31 +128,6 @@ body{
 
 }
 
-/* @media screen and (max-width: 450px) {
-    .education-nav {
-        right: -35%;  
-        left: 95%;            
-        bottom:0px;
-        transform: none; 
-        z-index: 1;         
-        width: clamp(200px, 2vw, 200px);
-    }
-    
-
-  .title-education h1 {
-    top: 20%;
-    text-align: center;
-    font-size: 3em;
-    position: relative;
-     z-index: 0;
-  }
-    .title-education {
-    position: relative;
-  }
-
-
-} */
-
 
 @media screen and (max-width: 480px) {
   .education-nav {
